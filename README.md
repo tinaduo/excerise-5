@@ -1,4 +1,11 @@
-# Chart
+# Exercise 5
+ 
 
-## installation
-npm install --save chart.js react-chartjs-2
+ ## Created By
+ - Tina
+
+## Description
+Today we learned how to:
+- Created Vertical Bar
+- Created Pie Chart
+- Created Horizontal Chart
