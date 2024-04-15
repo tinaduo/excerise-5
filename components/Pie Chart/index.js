@@ -16,28 +16,28 @@ ChartJS.register(
     Legend
 )
 
-export default function PieChart(){
+export default function PieChart() {
     const [chartData, setChartData] = useState({
         datasets: []
     })
 
     const [chartOptions, setChartOptions] = useState({})
 
-    useEffect (() => {
+    useEffect(() => {
         setChartData({
             labels: ["Purple", "Red", "Yellow"],
             datasets: [
                 {
                     label: 'Colours',
                     data: [10, 30, 14],
-                    borderColor:  [
+                    borderColor: [
                         'rgba(158, 128, 241, 1)',
-                        'rgba(220, 119, 85, 1)', 
+                        'rgba(220, 119, 85, 1)',
                         'rgba(246, 198, 92, 1)'
                     ],
                     backgroundColor: [
                         'rgba(158, 128, 241, 1)',
-                        'rgba(220, 119, 85, 1)', 
+                        'rgba(220, 119, 85, 1)',
                         'rgba(246, 198, 92, 1)'
                     ],
                     borderWidth: 1,
@@ -61,9 +61,9 @@ export default function PieChart(){
         })
     }, [])
 
-    return(
-        <>
-            <Pie data={chartData} options={chartOptions}/>
-        </>
+    return (
+        <div>
+            <Pie data={chartData} options={chartOptions} />
+        </div>
     )
 }
